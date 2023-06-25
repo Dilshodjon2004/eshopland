@@ -1,0 +1,33 @@
+@import "../colors";
+@import "../buttons";
+@import "../mixins";
+.women-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1595877786670-393ef0ac0961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+
+
+  .header {
+    @include flex-center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: $main-color;
+    padding-top: 13rem;
+  }
+
+  .look {
+    margin: 5rem;
+    text-align: center;
+    color: $main-color;
+    font-size: 5rem;
+
+    button {
+      @include button;
+    }
+
+    button:hover {
+      @include hover;
+    }
+  }
+}
